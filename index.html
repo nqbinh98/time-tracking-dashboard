@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+  <main>
+    <div id="error-container">
+      <div class="error-msg">Failed to read database.</div>  
+    </div>
+    <div class="container">
+      <div class="card-control">
+          <div class="card-control-top">
+            <div class="avatar">
+              <img src="./images/image-jeremy.png" alt="">
+            </div>
+            <div class="info">
+              <p class="intro">Report for</p>
+              <p class="name">Jeremy Robson</p>
+            </div>
+          </div>
+          <div class="card-control-bottom">
+            <span class="select-btn" data-type="daily">Daily</span>
+            <span class="select-btn active" data-type="weekly">Weekly</span>
+            <span class="select-btn" data-type="monthly">Monthly</span>
+          </div>
+      </div>
+      <div class="card-components">
+          <div data-activity="work" class="card work">
+              <div class="card-top card-work-top ">
+                <img src="./images/icon-work.svg" alt="">
+              </div>
+
+              <div class="card-bottom">
+                <div class="section">
+                  <span>Work</span>
+                  <div class="ellipsis">
+                    <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="time">
+                  <span class="current-time">--hrs</span>
+                  <div class="previous-time">
+                      --hrs
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div data-activity="play" class="card play">
+              <div class="card-top card-play-top ">
+                <img src="./images/icon-play.svg" alt="">
+              </div>
+
+              <div class="card-bottom">
+                <div class="section">
+                  <span>Play</span>
+                  <div class="ellipsis">
+                    <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="time">
+                  <span class="current-time">--hrs</span>
+                  <div class="previous-time">
+                      --hrs
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div data-activity="study" class="card study">
+              <div class="card-top card-study-top ">
+                <img src="./images/icon-study.svg" alt="">
+              </div>
+
+              <div class="card-bottom">
+                <div class="section">
+                  <span>Study</span>
+                  <div class="ellipsis">
+                    <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="time">
+                  <span class="current-time">--hrs</span>
+                  <div class="previous-time">
+                      --hrs
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div data-activity="exercise" class="card exercise">
+              <div class="card-top card-exercise-top ">
+                <img src="./images/icon-exercise.svg" alt="">
+              </div>
+
+              <div class="card-bottom">
+                <div class="section">
+                  <span>Exercise</span>
+                  <div class="ellipsis">
+                    <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="time">
+                  <span class="current-time">--hrs</span>
+                  <div class="previous-time">
+                      --hrs
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div data-activity="social" class="card social">
+              <div class="card-top card-social-top ">
+                <img src="./images/icon-social.svg" alt="">
+              </div>
+
+              <div class="card-bottom">
+                <div class="section">
+                  <span>Social</span>
+                  <div class="ellipsis">
+                    <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="time">
+                  <span class="current-time">--hrs</span>
+                  <div class="previous-time">
+                      --hrs
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          <div data-activity="self care" class="card care">
+              <div class="card-top card-care-top ">
+                <img src="./images/icon-self-care.svg" alt="">
+              </div>
+
+              <div class="card-bottom">
+                <div class="section">
+                  <span>Self Care</span>
+                  <div class="ellipsis">
+                    <img src="./images/icon-ellipsis.svg" alt="" srcset="">
+                  </div>
+                </div>
+                <div class="time">
+                  <span class="current-time">--hrs</span>
+                  <div class="previous-time">
+                      --hrs
+                  </div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Quang Binh</a>.
+  </footer>
+  
+
+  <script defer src="./index.js"></script>
+</body>
+</html>
