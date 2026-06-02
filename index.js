@@ -5,7 +5,7 @@ selectBtns.forEach(btn => {
 })
 
 let cachedData = [];
-let labelContent = {
+const labelContent = {
     daily: "Yesterday",
     weekly: "Last Week",
     monthly: "Last Month",
