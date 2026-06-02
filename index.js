@@ -67,7 +67,7 @@ async function fetchData () {
             render();
         }
 
-    } catch (error) {
+    } catch () {
         errorContainer.style.display = 'block';
     }   
 }
