@@ -53,7 +53,7 @@ function render () {
 
 
 async function fetchData () {
-    const errorContainer = document.querySelector('#error-container');
+    const errorContainer = document.querySelector('.error-container');
 
     try {
         const response = await fetch('./data.json');
